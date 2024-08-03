@@ -1,6 +1,6 @@
 # Clippy
 
-[![Clippy Test](https://github.com/rust-lang/rust-clippy/workflows/Clippy%20Test%20(bors)/badge.svg?branch=auto&event=push)](https://github.com/rust-lang/rust-clippy/actions?query=workflow%3A%22Clippy+Test+(bors)%22+event%3Apush+branch%3Aauto)
+[[Clippy Test](https://github.com/rust-lang/rust-clippy/workflows/Clippy%20Test%20(bors)/badge.svg?branch=auto&event=push)](https://github.com/rust-lang/rust-clippy/actions?query=workflowy%3A%22Clippy+Test+(bors)%22+event%3Apush+branch%3Aauto)
 [![License: MIT OR Apache-2.0](https://img.shields.io/crates/l/clippy.svg)](https://github.com/rust-lang/rust-clippy#license)
 
 A collection of lints to catch common mistakes and improve your
@@ -15,12 +15,12 @@ category.
 
 | Category              | Description                                                                         | Default level |
 |-----------------------|-------------------------------------------------------------------------------------|---------------|
-| `clippy::all`         | all lints that are on by default (correctness, suspicious, style, complexity, perf) | **warn/deny** |
-| `clippy::correctness` | code that is outright wrong or useless                                              | **deny**      |
-| `clippy::suspicious`  | code that is most likely wrong or useless                                           | **warn**      |
-| `clippy::style`       | code that should be written in a more idiomatic way                                 | **warn**      |
-| `clippy::complexity`  | code that does something simple but in a complex way                                | **warn**      |
-| `clippy::perf`        | code that can be written to run faster                                              | **warn**      |
+| clippy::all`         | all lints that are on by default (correctness, suspicious, style, complexity, perf) | **warn/deny** |
+| clippy::correctness` | code that is outright wrong or useless                                              | **deny**      |
+| clippy::suspicious`  | code that is most likely wrong or useless                                           | **warn**      |
+| clippy::style`       | code that should be written in a more idiomatic way                                 | **warn**      |
+| clippy::complexity`  | code that does something simple but in a complex way                                | **warn**      |
+| clippy::perf`        | code that can be written to run faster                                              | **warn**      |
 | `clippy::pedantic`    | lints which are rather strict or have occasional false positives                    | allow         |
 | `clippy::restriction` | lints which prevent the use of language and library features[^restrict]             | allow         |
 | `clippy::nursery`     | new lints that are still under development                                          | allow         |
@@ -33,12 +33,12 @@ lints may lint against perfectly reasonable code, may not have an alternative su
 and may contradict any other lints (including other categories). Lints should be considered
 on a case-by-case basis before enabling.
 
-[^restrict]: Some use cases for `restriction` lints include:
-    - Strict coding styles (e.g. [`clippy::else_if_without_else`]).
+[restrict]: Some use cases for `restriction` lints include:
+    - Strict coding styles (e.g. [clippy::else_if_without_else`]).
     - Additional restrictions on CI (e.g. [`clippy::todo`]).
     - Preventing panicking in certain functions (e.g. [`clippy::unwrap_used`]).
     - Running a lint only on a subset of code (e.g. `#[forbid(clippy::float_arithmetic)]` on a module).
 
-[`clippy::else_if_without_else`]: https://rust-lang.github.io/rust-clippy/master/index.html#else_if_without_else
-[`clippy::todo`]: https://rust-lang.github.io/rust-clippy/master/index.html#todo
-[`clippy::unwrap_used`]: https://rust-lang.github.io/rust-clippy/master/index.html#unwrap_used
+[clippy::else_if_without_else`]: https://rust-lang.github.io/rust-clippy/master/index.html#else_if_without_else
+[clippy::todo`]: https://rust-lang.github.io/rust-clippy/master/index.html#todo
+[clippy::unwrap_used`]: https://rust-lang.github.io/rust-clippy/master/index.html#unwrap_used
